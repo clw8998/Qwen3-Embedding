@@ -296,7 +296,20 @@ def run_eval(model, tasks: list, args: EvalArguments, **kwargs):
         model.start()
         _started = True
 
+    target = [
+        "STS22",
+        "ATEC",
+        "BQ",
+        "LCQMC",
+        "PAWSX",
+        "STSB",
+        "AFQMC",
+        "QBQTC",
+    ]
+
     for t in tasks:
+        if t.metadata.name not in target:
+            continue
         if t.metadata.name == 'BrightRetrieval':
             run_bright(t, model, args, **kwargs)
             continue

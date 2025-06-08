@@ -1,0 +1,12 @@
+/data
+/results
+/experiments
+/save_model
+/mining_neg_result
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+/wandb
+/datasets

@@ -17,3 +17,7 @@ python run_mteb.py \
   --batch_size 8 \
   --benchmark "${benchmark}" $@
   # --tasks "WinoGrande"
+
+
+# example:
+# bash run_mteb.sh "Qwen/Qwen3-Embedding-0.6B" "Qwen/Qwen3-Embedding-0.6B" "MTEB(cmn, v1)"
